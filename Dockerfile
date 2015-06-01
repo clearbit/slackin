@@ -1,6 +1,6 @@
 FROM octohost/nodejs
 
-ENV PORT 3000
+ENV PORT 5000
 
 ADD . /srv/www
 
@@ -10,6 +10,6 @@ RUN npm install
 
 RUN make
 
-EXPOSE 3000
+EXPOSE 5000
 
 CMD ./bin/slackin --channels $SLACK_CHANNELS --port $PORT $SLACK_SUBDOMAIN $SLACK_API_TOKEN
