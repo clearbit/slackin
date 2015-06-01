@@ -12,4 +12,4 @@ RUN make
 
 EXPOSE 5000
 
-CMD ./bin/slackin --silent --channels $SLACK_CHANNELS --port $PORT $SLACK_SUBDOMAIN $SLACK_API_TOKEN
+CMD ./bin/slackin --silent --port $PORT $SLACK_SUBDOMAIN $SLACK_API_TOKEN
