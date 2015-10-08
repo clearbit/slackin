@@ -6,9 +6,7 @@ ADD . /srv/www
 
 WORKDIR /srv/www
 
-RUN npm install
-
-RUN make
+RUN npm install --unsafe-perm
 
 EXPOSE 5000
 
